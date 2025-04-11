@@ -2,12 +2,12 @@
 
 Shows how to use the simplified bdr_tools architecture in a script, which can be run from any valid server.
 
+The `example_script.py` simply takes a collection name, and uses bdr_tools to query solr. It prints out the pid and title of five items of the collection.
+
 
 # Usage
 
     $ uv run --env-file "../.env" ./example_script.py --collection_name "The Collection Name"
-
-The output will show the collection name, followed by five 
 
 
 # Notes
