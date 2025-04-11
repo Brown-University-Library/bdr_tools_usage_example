@@ -45,13 +45,14 @@ def run_code(collection_name: str) -> None:
         collection_name (str): The name of the collection.
     """
     query: str = f'ir_collection_name:"{collection_name}"'
+    print('\n' + f'Collection Name, ``{query}``' + '\n\n')
     results = bdr_tools.solr.search(
         query,
         rows=5,
         fl='pid,primary_title',
         sort='pid asc',  # _does_ sort by pid, but by pid as a string, not as a number; eg `bdr:123` comes before `bdr:5`
     ).docs
-    print('results, ``%s``', pprint.pformat(results))
+    print(f'results, ``{pprint.pformat(results)}``\n\n')
     return
 
 
