@@ -1,0 +1,12 @@
+## envars for bdr_tools ---------------------------------------------
+BACKEND_STORAGE_BASE_URL='url-to-backend-storage'  # include trailing slash
+BDR_BASE='url-to-bdr-base'  # no trailing slash
+IMAGE_SERVER_URL='url-to-image-server'  # include trailing slash
+PRIVATE_ITEMS_API_URL="url-to-private-items-api"  # include trailing slash
+PRIVATE_COLLECTIONS_API_URL="url-to-private-collections-api"  # include trailing slash
+SOLR_URL='url-to-solr'  # include trailing slash
+
+## envars for your script (if applicable) ---------------------------
+YOUR_KEY="YOUR_VALUE"
+
+## (end-of-file)
